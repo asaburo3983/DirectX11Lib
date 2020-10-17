@@ -1,0 +1,2 @@
+ClipStudioで作った画像は完全透過できない
+FireAlphacaで変換しなおすべし

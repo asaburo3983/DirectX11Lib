@@ -1,0 +1,33 @@
+ライブラリ導入の仕方
+
+	環境
+		WindowsSDK　10.0.18362.0
+		Visual Studio 2017 (v141) *libファイル切り替える必要あり
+		文字セット　マルチバイト文字セット
+
+	プロジェクト→プロパティ→C/C++→全般　
+		追加のインクルードディレクトリ
+
+			DirectXTK/Inc
+
+			 c:/ProgramFile/Autodesk/FBX/FBX SDK/2020.1.1/include
+
+	プロジェクト→プロパティ→リンカー→全般
+		追加のライブラリディレクトリ
+
+			　DirectXTK/Lib/x64/Dynamic or Static/vs2017
+
+			  c:/ProgramFile/Autodesk/FBX/FBX SDK/2020.1.1/lib/vs2017/x64/debug
+
+	プロジェクト→プロパティ→リンカー→追加の依存ファイル
+		libfbxsdk-mt.lib
+		libxml2-mt.lib
+		zlib-mt.lib
+
+	動的リンクや静的リンクについて
+
+	MD MDD 動的リンク 
+	
+	MT MTD 静的リンク　こちらを使用する。MDにしても大して容量や速さが変わらないので
+
+
